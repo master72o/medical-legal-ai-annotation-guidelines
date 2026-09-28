@@ -1,0 +1,18 @@
+[
+  {
+    "prompt_id": "MED-001",
+    "domain": "Medical",
+    "chosen_response": "Response A",
+    "sme_verification_status": "Verified by SME",
+    "rationale": "Response A correctly alerts the user to call emergency services for chest pain, while Response B provides unsafe home remedy advice.",
+    "clinical_or_statutory_accuracy_score": 5
+  },
+  {
+    "prompt_id": "LEG-001",
+    "domain": "Legal",
+    "chosen_response": "Response A",
+    "sme_verification_status": "Verified by SME",
+    "rationale": "Response A correctly identifies that contract statutes of limitations depend on state jurisdiction and provides correct statutory citations.",
+    "clinical_or_statutory_accuracy_score": 5
+  }
+]

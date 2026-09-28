@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DomainSpecificAnnotationSchema",
+  "type": "object",
+  "required": [
+    "prompt_id",
+    "domain",
+    "chosen_response",
+    "sme_verification_status",
+    "rationale"
+  ],
+  "properties": {
+    "prompt_id": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "Medical",
+        "Legal"
+      ]
+    },
+    "chosen_response": {
+      "type": "string",
+      "enum": [
+        "Response A",
+        "Response B",
+        "TIE"
+      ]
+    },
+    "sme_verification_status": {
+      "type": "string",
+      "enum": [
+        "Verified by SME",
+        "Pending Review",
+        "Escalated"
+      ]
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 20
+    },
+    "clinical_or_statutory_accuracy_score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    }
+  }
+}
