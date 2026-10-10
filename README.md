@@ -26,3 +26,12 @@ A 25-page, high-rigor Annotation Guideline Manual & Subject Matter Expert (SME) 
 - **SME Gold Dataset**: [`data/sme_gold_dataset.json`](./data/sme_gold_dataset.json)
 - **Validator**: Run `python validator.py --dataset data/sme_gold_dataset.json`
 - **Tests**: Run `pytest tests/`
+
+---
+
+## 🔬 Benchmark Methodology & Results Provenance
+
+> [!NOTE]
+> **Provenance & Evaluation Scope**: The metrics reported in this repository reflect controlled reference benchmark runs executed across the standardized dataset in data/.
+> - **Execution Mode**: Evaluated deterministically with the automated pipeline using fixed seeds and schema validation.
+> - **Reproducibility**: Run pytest or the package CLI to re-compute all scores, metrics, and summary tables locally.
